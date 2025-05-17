@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_inicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- 🔴 Franja roja superior -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="#B71C1C" />
+
+    <!-- 🏛️ Logo centrado -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/logo_uns"
+        android:contentDescription="Logo UNS"
+        android:layout_gravity="center" />
+
+    <!-- 📢 Título -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenidos al Quiz de Camargo"
+        android:textAlignment="center"
+        android:textColor="#B71C1C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+
+    <!-- 🧑 Campo para nombre -->
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Ingresa tu nombre"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#B71C1C"
+        android:inputType="textPersonName"
+        android:importantForAutofill="no" />
+
+    <!-- ▶️ Botón comenzar -->
+    <Button
+        android:id="@+id/btnComenzar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comenzar"
+        android:enabled="false"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#B71C1C"
+        android:textColor="#FFF" />
+
+    <!-- 🔴 Franja roja inferior -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="32dp"
+        android:background="#B71C1C" />
+</LinearLayout>
